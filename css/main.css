@@ -1,0 +1,47 @@
+.thin-border {
+  border: 1px solid #DDD;
+  border-radius: 5px;
+}
+
+.thick-white-border {
+  border: 4px solid white;
+  border-radius: 5px;
+}
+
+.img-block {
+  max-width: 1020px;
+  background-color: white;}
+
+.main-block {
+  max-width: 680px;
+padding:20px 15px 0px;}
+
+.big-center-block {
+  max-width: 1140px;
+  padding-top: 48px;
+  padding-bottom: 2.15%;
+  background-color: #EEE;
+  border-radius: 6px;
+  margin-top: 60px;}
+
+.spc {height: 12px;}
+
+hr{ max-width: 1140px;
+    margin-top: 30px;}
+
+h1 {
+  font-size: 63px;}
+
+.under-img {
+  margin: 5px 5px 13px;}
+
+.quote-text {
+  font-size: 21px}
+
+footer {font-style: italic;}
+
+.large-font {
+  font-size: 24px;
+  line-height:26px; } /*108%*/
+
+footer {margin-top: 15px;}
