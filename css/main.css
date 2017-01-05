@@ -4,7 +4,6 @@
 }
 
 .thick-white-border {
-  border: 4px solid white;
   border-radius: 5px;
 }
 
@@ -65,5 +64,20 @@ footer {margin-top: 15px;}
 }
 
 .center-block {
+  
   clear: both;
+}
+
+.row {
+  /*border: 4px solid black;*/
+  padding: 20px;
+}
+.pickup {
+  border: 3px solid #EEE;
+  margin: 0px 30px 20px;
+  padding: 10px 10px 0px;
+  font-size: 1.2em;
+}
+.img-center {
+  border: 10px solid white;
 }
