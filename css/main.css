@@ -54,7 +54,7 @@ footer {margin-top: 15px;}
   margin: 20px;
 }
 .vk {
-  margin-left: 180px;
+  float: right;
 }
 
 .contact a img:hover {
