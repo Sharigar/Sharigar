@@ -38,7 +38,7 @@ hr{ max-width: 1140px;
 }
 
 .under-img {
-  margin: 5px 5px 13px;}
+  margin: 5px 10px 13px;}
 
 .quote-text {
   font-size: 21px}
@@ -53,14 +53,30 @@ footer {margin-top: 15px;}
 .logo {
     float: left;
     margin: 50px;
+  /*border: 4px solid black;*/
 }
 .contact {
+  width: 250px;
+  /*border: 4px solid black;*/
   float: right; 
-  margin: 10px 30px;
-  
+  margin: 60px 30px;
 }
-.vk {
+
+.vk-logo {
   float: right;
+  /*border: 4px solid black;*/
+  margin-right: 33px;
+}
+
+.vk-mi {
+  width: 126px;
+  float: right;
+  /*border: 4px solid black;*/
+}
+.time {
+  width:126px;
+  float: right;
+  /*border: 4px solid black;*/
 }
 
 .contact a img:hover {
@@ -74,6 +90,7 @@ footer {margin-top: 15px;}
 }
 
 .row {
+  /*border: 4px solid black;*/
   padding: 20px;
 }
 .pickup {
@@ -87,84 +104,116 @@ footer {margin-top: 15px;}
   height: 400px;
 }
 /*Carousel*/
-.carousel-items, .carousel-labels {
-	padding: 0;
-	list-style: none;
-	display: block;
+
+.fader{
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden;
+} 
+.fader img {
+  margin: 0 21%;
 }
-.carousel-item {
-	display: block;
-	float: left;
+ 
+.fader .slide{
+    position: absolute;
+    /*width: 80%;*/
+    
+    height: 500px;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+ 
+.fader img.slide{
+    height: auto;
 }
 
-.carousel-wrapper {
-	width: 100%;
-	position: relative;
-	padding-bottom: 440px;
-	background-color: #eee;
-	overflow: hidden;
-}
-.carousel-items {
-	width: 300%;
-	height: 200%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	transition: left .5s ease-out;
-	-o-transition: left .5s ease-out;
-	-ms-transition: left .5s ease-out;
-	-moz-transition: left .5s ease-out;
-	-webkit-transition: left .5s ease-out;
-}
-.carousel-item {
-	width: 33.33333333%;
-	height: 100%;
-	color: white;
+.fader .prev,
+.fader .next{
+  position: absolute;
+  height: 80px;
+  line-height: 55px;
+  width: 50px;
+  font-size: 100px;
+  text-align: center;
+  color: #333;
+  top: 50%;
+  left: 0;
+  z-index: 4;
+  margin-top: -25px;
+  cursor: pointer;
+  opacity: .7;
+  transition: all 150ms;
 }
 
-.carousel-labels {
-	position: absolute;
-	z-index: 2;
-	left: 0;
-	bottom: 0;
-	height: 20px;
-	width: 100%;
-	padding: 10px 0;
-	text-align: center;
-}
-.carousel-selector {
-	display: none;
-}
-.carousel-label {
-	display: inline-block;
-}
-.carousel-label label {
-	width: 20px;
-	height: 20px;
-	border-radius: 10px;
-  border: 1px solid #DDD;
-	background-color: white;
-	display: block;
-	cursor: pointer;
+.fader .prev:hover,
+.fader .next:hover{
+  opacity: 1;
 }
 
-#slide1:checked ~ .carousel-items {
-	left: 0;
+.fader .next{
+  left: auto;
+  right: 0;
 }
-#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
-	background-color: #333;
+
+.fader .pager_list{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  bottom: 0;
+  text-align: center;
+  z-index: 4;
 }
-#slide2:checked ~ .carousel-items {
-	left: -100%;
+
+.fader .pager_list li{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+  background: #333;
+  opacity: .4;
+  /*text-indent: -999px;*/
+  font-size: 1px;
+  color: #eee;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 150ms;
 }
-#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
-	background-color: #333;
+
+.fader .pager_list li:hover,
+.fader .pager_list li.active{
+  opacity: 1;
+
 }
-#slide3:checked ~ .carousel-items {
-	left: -200%;
-}
-#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
-	background-color: #333;
-}
+
 /*Carousel-end*/
+/*PopUp*/
+.b-popup{ 
+    z-index: 4;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed; 
+    top:0px;
+    display: none;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:800px;
+    height: 640px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.b-popup-content-img{
+    width:100%;  
+}
+.b-popup-close{
+    width: 40px;
+    float: right;
+}
+/*PopUp-end*/
